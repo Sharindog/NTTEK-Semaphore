@@ -1,5 +1,6 @@
-- name: be sure ntp is installed
-  yum:
-    name: ntp
-    state: present
-  tags: ntp
+- hosts: all
+  sudo: yes
+  tasks: 
+    - name: Update and upgrade apt packages
+      become: true
+      apt: upgrade=yes update_cache=yes cache_valid_time=86400
