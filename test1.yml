@@ -1,4 +1,2 @@
-- name: Add the user 'bob' with a specific uid 
-    tasks: 
-        - name: apt update
-          action: sudo apt update
+- name: apt update
+  action: sudo apt update
