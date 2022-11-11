@@ -1,5 +1,4 @@
 - name: Add the user 'bob' with a specific uid 
-    ansible.builtin.user:
-      name: bob
-      state: present
-      uid: 1040
+    tasks: 
+        - name: apt update
+          action: sudo apt update
