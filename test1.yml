@@ -1,2 +1,5 @@
-- name: apt update
-  action: sudo apt update
+- name: be sure ntp is installed
+  yum:
+    name: ntp
+    state: present
+  tags: ntp
